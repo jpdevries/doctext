@@ -13,7 +13,7 @@ WIP. DocText is a documentation template inspired by [devdocs](http://devdocs.io
 
 
 ## Check out the Wiki
- * [Contribution Guide](wiki/Contribution-Guide)
- * [Roadmap](wiki/Roadmap)
+ * [Contribution Guide](https://github.com/jpdevries/doctext/wiki/Contribution-Guide)
+ * [Roadmap](https://github.com/jpdevries/doctext/wiki/Roadmap)
 
 
