@@ -15,8 +15,13 @@ The below features can currently be found in the develop branch. See the [Roadma
  * Syntax Highlighting
  * Responsive Tables
 
-## Check out the Wiki
+## References
+### Check out the Wiki
  * [Contribution Guide](https://github.com/jpdevries/doctext/wiki/Contribution-Guide)
  * [Roadmap](https://github.com/jpdevries/doctext/wiki/Roadmap)
+
+### Discuss DocText
+ * [MODX Forums](http://forums.modx.com/thread/88129/doctext-new-rtfm-theme-proposal)
+ * Contact the [Author](mailto:jp@modx.com?Subject=DocText)
 
 
