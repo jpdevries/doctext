@@ -6,6 +6,9 @@
 WIP. DocText is a documentation template inspired by [devdocs](http://devdocs.io). It comes with a configurable responsive front end theme along with many exciting features like front end editing and web app features such as AJAX loading and offline support.
 
 ## Feature List
+
+The below features can currently be found in the develop branch. See the [Roadmap](https://github.com/jpdevries/doctext/wiki/Roadmap) for more.
+
  * Automation through [Grunt Workflow](wiki/Contribution-Guide)
  * Configurable Responsive Template
  * SMACSS complient Sass
