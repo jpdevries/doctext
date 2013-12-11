@@ -1,0 +1,61 @@
+{
+  "name": "doctext",
+  "version": "0.0.0",
+  "author": {
+    "name": "JP DeVries",
+    "url": "http://devries.jp"
+  },
+  "homepage": "https://github.com/jpdevries/doctext",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpdevries/doctext"
+  },
+  "bugs": {
+    "url": "https://github.com/jpdevries/doctext/issues"
+  },
+  "dependencies": {
+    "bourbon": "~3.1.8",
+    "neat": "~1.4.0",
+    "html5-boilerplate": "~4.3.0",
+    "font-awesome": "~4.0.3"
+  },
+  "exportsOverride": {
+    "bourbon": {
+      "": "app/assets/stylesheets/"
+    },
+    "neat": {
+      "": "app/assets/stylesheets/"
+    },
+    "html5-boilerplate": {
+      "css": [
+        "css/main.css",
+        "css/normalize.css"
+      ],
+      "js": [
+        "js"
+      ],
+      "": [
+        "./.htaccess",
+        "./favicon.ico",
+        "./humans.txt",
+        "./index.html",
+        "./robots.txt",
+        "./apple-touch-icon-precomposed.png"
+      ]
+    },
+    "font-awesome": {
+      "scss": [
+        "scss"
+      ],
+      "fonts": [
+        "fonts"
+      ],
+      "less": [
+        "less"
+      ],
+      "css": [
+        "css"
+      ]
+    }
+  }
+}

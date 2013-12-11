@@ -1,0 +1,228 @@
+/*$mobilePortrait: new-breakpoint(max-width 320 12);*/
+$mobilePortraitMin: new-breakpoint(min-width 320px 12);
+$mobileLandscape: new-breakpoint(max-width 480px 12);
+$tabletPortrait: new-breakpoint(max-width 768px 12);
+$tabletPortraitMin: new-breakpoint(min-width 768px 12);
+/*$tabletLandscape: new-breakpoint(max-width 1024px 12);*/
+$breakTables: new-breakpoint(max-width 960px 12);
+$cinema: new-breakpoint(min-width 1350px 12);
+$tabletPortrait: new-breakpoint(max-width 724px 12);
+
+td {
+	word-wrap:break-word;
+	padding-right:1em;
+}
+
+table {
+	@include responsive-table();
+}
+
+html { font-size: 62.5%; } 
+body { @include rem(font-size,1.6); } /* =14px */
+h1   { @include rem(font-size,4.2); } /* =24px */
+h2   { @include rem(font-size,2.8); }
+h3   { @include rem(font-size,2.2); }
+
+html,body {
+	height:100%;
+}
+
+menu,ol,ul {
+	padding:0 0 0 2rem;
+}
+
+dl, menu, ol, ul {
+	margin:1rem 0;
+}
+
+.clearfix {
+	@extend %clearfix;
+}
+
+.stage {
+	position:absolute;
+	top:4.675rem;
+	left:0;
+	right:0;
+	bottom:0;
+	pointer-events:none;
+	@include media($tabletPortrait){
+		position:static;
+		margin-top:3.2em;
+	}
+}
+
+#wrapper {
+	@include outer-container();
+	max-width:none;
+	@include media($tabletPortrait) {
+		
+	}
+}
+
+.main-nav {
+	@include outer-container();
+	@extend %subtleGradient;
+	max-width:none;
+	position:absolute;
+	z-index:$topMost;
+	top:0;
+	left:0;
+	right:0;
+	height:4.675rem;
+	padding:0.5rem 0.5rem 0 0.5rem;
+	@include media($tabletPortrait) {
+		position:fixed;
+	}
+	form {
+		width:28rem;
+		display:inline-block;
+		@include media($tabletPortrait) {
+			width:auto;
+		}
+		@include media($cinema) {
+			width:24%;
+		}
+	}
+		input {
+			width:100%;
+			margin:0;
+			@include media($tabletPortrait) {
+				width:auto;
+				position:absolute;
+				top:0.675rem;
+				bottom:0.675rem;
+				left:1rem;
+				right:6rem;
+			}
+		}
+		button {
+			position:absolute;
+			top:0.675rem;
+			right:1rem;
+			bottom:0.675rem;
+			padding-top:0.25rem;
+			padding-bottom:0.25rem;
+			width:4rem;
+			&.fa {
+				padding-left:0;
+				padding-right:0;
+				text-align:center;
+			}
+		}
+		
+	h2 {
+		display:inline-block;
+		padding-left:2rem;
+		position:absolute;
+		left:28rem;
+		top:0.45rem;
+		@include media($tabletPortrait) {
+			display:none;
+		}
+		@include media($cinema) {
+			left:24%;
+		}
+		margin:0;
+	}
+}
+.sidebar {
+	@include rem(padding-left, 1);
+	@include rem(padding-right, 2);
+	@include rem(padding-top, 2);
+	ul {
+		padding-left:0;
+		margin:0;
+		ul {
+			padding-left:2rem;
+		}
+	}
+	@include media($tabletPortrait) {
+	}
+}
+
+/*.js {*/
+	.sidebar {
+		position:absolute;
+		top:0;
+		left:0;
+		padding-left:0.5rem;
+		width:28.5rem;
+		bottom:0;
+		nav {
+			@include rem(padding-left,2);
+			@include rem(padding-right,2);
+		}
+		@include media($tabletPortrait) {
+			position:absolute;
+			background:red;
+			top:30px;
+			left:-100%;
+			bottom:0;
+			right:0;
+		}
+		@include media($cinema) {
+			width:24%;
+		}
+	}
+	.main-nav {
+		input {
+			@include media($tabletPortrait) {
+			}
+		}
+		button {
+			display:none;
+			@include media($tabletPortrait) {
+				display:block;
+			}
+		}
+	}
+/*}*/
+
+.content {
+	@extend %touch-scroll;
+	@include outer-container();
+	position:absolute;
+	top:0;
+	left:28rem;
+	right:0;
+	bottom:0;
+	overflow-x:hidden;
+	padding-left:2rem;
+	padding-right:2rem;
+	padding-bottom:2em;
+	header {
+		@include outer-container();
+		nav {
+			margin:2rem 0 0 0;
+			text-align:right;
+			@include media($tabletPortrait) {
+				text-align:center;
+			}
+		}
+	}
+	@include media($tabletPortrait) {
+		position:static;
+		left:0;
+		right:0;
+		padding-left:1.2em;
+		padding-right:1.2em;
+		overflow-y:none;
+	}
+	@include media($cinema) {
+		left:24%;
+		right:0;
+		padding-left:1.2em;
+		padding-right:1.2em;
+		overflow-y:none;
+		max-width:none;
+		header {
+			max-width:none;
+		}
+	}
+}
+
+code, pre {
+	font-size:1.4rem;
+	line-height:1.6rem;
+}

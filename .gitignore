@@ -1,0 +1,7 @@
+.sass-cache
+node_modules
+bower_components
+_build/template/default/scss/bourbon
+_build/template/default/scss/html5-boilerplate
+_build/template/default/scss/neat
+_build/template/default/scss/font-awesome

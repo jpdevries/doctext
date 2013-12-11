@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="wrapper">
+			<header class="main-nav">
+        		<form>
+        			<input id="search" name="search" type="search" placeholder="Search..." />
+					<button type="submit" data-class="fa fa-bars">Go</button>
+        		</form>		
+				<h2>MODX Docs</h2>
+				<!--nav>
+					<a>Evolution</a>
+					<a>Revolution</a>
+					<a>Contact</a>
+				</nav-->
+			</header>
+			<div class="stage">
+				<section class="sidebar">
+					<nav class="sitemap">
+						<noscript>
+							<iframe src="iframe.html">
+								<p>Browse the <a href="sitemap.html">sitemap.</a></p><!-- SEO and no-js users are given link to sitemap page -->
+							</iframe>
+						</noscript>
+						<!--
+						over AJAX nav.sitemap will be populated with a asynchronous tree to navigate the site
+						-->
+						<div class="ajax"><!-- this will come from ajax -->
+							<ul>
+								<li>
+									<a>Evolution</a>
+									<ul>
+										<li>
+											<a>Building Sites with Evolution</a>
+										</li>
+										<li>
+											<a>Getting Started</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a>Revolution</a>
+									<ul>
+										<li>
+											<a>Building Sites with Revolution</a>
+										</li>
+										<li>
+											<a>Getting Started</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+	        	</section>
+				<main class="content">
+					<header>
+						<nav class="action-nav">
+							<a>Edit Document</a>
+							<a>Create Here</a>
+						</nav>
+						<h1>boilerX</h1>
+					</header>
+					<p>Get up and running with HTML5 Boilerplate in minutes.</p>
+					<pre class="notebox">[[$bx.head-open]]</pre>
+					<h2><a name="WhatisboilerX%3F"></a>What is boilerX?</h2>
+					<p>
+						<img src="http://jpdevries.s3.amazonaws.com/assets/uploads/rtfm/HTML5_Logo_512.png" height="120" style="float:left;margin-bottom:1em"><a href="https://github.com/jpdevries/boilerx">HTML5 Boilerplate</a> helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.
+					</p>
+					<p>
+						  boilerX makes getting up and running with HTML5 Boilerplate a click away and is configurable using System Settings. Upon installation boilerplate assets are automatically placed in your assets folder.
+					</p>
+					<div class="clearfix">
+					</div>
+					<h2 id="installation">Installation</h2>
+					<p>
+						  Install via Package Manager.
+					</p>
+					<div class="error">
+					    <span>This is an error message <a href="#">with a link</a></span>
+					  </div>
+					<div class="warning">
+						  Make sure to remove "sample." from the names of the boilerX elements. This way, when installing the packages any changes you may make won't be overridden.
+					</div>
+					<h2 id="exampletemplate">Example Template</h2>
+					<p>
+						  boilerX comes with an example Template that simply includes several chunks in the correct order.
+					</p>
+					<pre class="brush: php" data-language="php">
+&#91;&#91;bx-head-open&#93;&#93;
+&#91;&#91;bx-head-append&#93;&#93;
+&#91;&#91;bx-head-close&#93;&#93;
+&#91;&#91;bx-container-open&#93;&#93;
+&#91;&#91;*content&#93;&#93;
+&#91;&#91;bx-container-close&#93;&#93;
+&#91;&#91;bx-bottom-open&#93;&#93;
+&#91;&#91;bx-bottom-close&#93;&#93;
+					</pre>
+					<h2 id="boilerxchunks">boilerX Chunks</h2>
+					<p>
+						<strong>bx-head-open</strong>
+					</p>
+					<p>
+						  The bulk of the header, includes CSS and modernizr as well as meta tags.
+					</p>
+					<p>
+						<strong>bx-head-append</strong>
+					</p>
+					<p>
+						  Blank, meant to be an easy way to include CSS stylesheets, JavaScript, or meta tags before the closing head tag. This would be a good place to include MetaX.
+					</p>
+					<p>
+						<strong>bx-head-close</strong>
+					</p>
+					<p>
+						  Simply closes the body tag.
+					</p>
+					<p>
+						<strong>bx-container-close</strong>
+					</p>
+					<p>
+						  Blank, meant to be used for a wrapper div if needed.
+					</p>
+					<p>
+						<strong>bx-container-close</strong>
+					</p>
+					<p>
+						  Blank, meant to close anything including in the bx-container-open Chunk.
+					</p>
+					<p>
+						<strong>bx-bottom-open</strong>
+					</p>
+					<p>
+						  Deffered JavaScript and Google Analytics tracking code. <strong>bx-bottom-close</strong>
+					</p>
+					<p>
+						<strong>bx-bottom-close</strong>
+					</p>
+					<p>
+						  Closes the body and html tags.
+					</p>
+					<h2 id="systemsettings">System Settings</h2>
+					<style type="text/css">
+					.bx-settings td:nth-of-type(1):before { content: "Name"; }
+					.bx-settings td:nth-of-type(2):before { content: "Description"; }
+					.bx-settings td:nth-of-type(3):before { content: "Default"; }
+					</style>
+					<table class="bx-settings">
+					 <colgroup> <col style="text-align:left;"> <col style="text-align:left;"> <col style="text-align:left;"> </colgroup>
+					<thead>
+					<tr>
+						<th style="text-align:left;">
+							  Name
+						</th>
+						<th style="text-align:left;">
+							  Description
+						</th>
+						<th style="text-align:left;">
+							  Default
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td style="text-align:left;">
+							  Google Analytics ID
+						</td>
+						<td style="text-align:left;">
+							  Optional, if not set will comment out tracking code
+						</td>
+						<td style="text-align:left;">
+							  UAXXXXXXXX1
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  CSS Path
+						</td>
+						<td style="text-align:left;">
+							  Path to your main.css stylesheet
+						</td>
+						<td style="text-align:left;">
+							  assets/components/boilerx/css/main.css
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  Normalize CSS Path
+						</td>
+						<td style="text-align:left;">
+							  Path to your normalize.css stylesheet
+						</td>
+						<td style="text-align:left;">
+							  assets/components/boilerx/css/normalize.css
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  jQuery version
+						</td>
+						<td style="text-align:left;">
+							  Version of jQuery to use with HTML5 Boilerplate
+						</td>
+						<td style="text-align:left;">
+							  1.9.1
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  Modernizr.js Path
+						</td>
+						<td style="text-align:left;">
+							  Path to you modernizr.js path
+						</td>
+						<td style="text-align:left;">
+							  assets/components/boilerx/js/vendor/modernizr–2.6.2.min.js
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  Meta Author
+						</td>
+						<td style="text-align:left;">
+							  Sets meta authors tag
+						</td>
+						<td style="text-align:left;">
+							  Site Authors
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  Meta Description
+						</td>
+						<td style="text-align:left;">
+							  Sets the meta description tag
+						</td>
+						<td style="text-align:left;">
+							  Not Another Wordpress Site
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  Meta Viewport
+						</td>
+						<td style="text-align:left;">
+							  Sets iOS viewport settings
+						</td>
+						<td style="text-align:left;">
+							  width=device-width,initial-scale=1
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  IE Edge Mode
+						</td>
+						<td style="text-align:left;">
+							  Sets IE Edge mode tag
+						</td>
+						<td style="text-align:left;">
+							  IE=edge,chrome=1
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  IE Chrome Frame
+						</td>
+						<td style="text-align:left;">
+							  Version of IE to start displaying Chrome Frame
+						</td>
+						<td style="text-align:left;">
+							  7
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:left;">
+							  Show Comments
+						</td>
+						<td style="text-align:left;">
+							  Whether or not to show tips using comments in markup
+						</td>
+						<td style="text-align:left;">
+							  true
+						</td>
+					</tr>
+					</tbody>
+					</table>
+					<h2 id="examplemarkup">Example Markup</h2>
+					<p>
+						  Default output generated by the sample.BoilerXTemplate. Replicates HTML5 Boilerplate 4.2.0 markup (h5bp-html5-boilerplate-defe483)
+					</p>
+					<pre class="brush: xml" data-language="html">
+&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt;      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;         &lt;html class="no-js lt-ie9 lt-ie8"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;         &lt;html class="no-js lt-ie9"&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js"&gt; &lt;!--&lt;![endif]--&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta http-equiv="X-UA-Compatible"  content="IE=edge,chrome=1"&gt;
+        &lt;title&gt;MODX Revolution - Home&lt;/title&gt;
+        &lt;meta name="description" content="Site Description"&gt;
+        &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+        &lt;!-- Place favicon.ico and apple-touch-icon.png in the root directory --&gt;
+        &lt;link rel="stylesheet" href="assets/components/boilerx/css/normalize.css"&gt;
+        &lt;link rel="stylesheet" href="assets/components/boilerx/css/main.css"&gt;
+        &lt;script src="assets/components/boilerx/js/vendor/modernizr-2.6.2.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Use this chunk to append to your head tag --&gt;
+&lt;/head&gt;
+    &lt;!-- Use these body classes to target any combination of specific templates, ids, children, and class_keys --&gt;
+    &lt;body class="t-2 id-1 p-0 ck-modDocument"&gt;
+        &lt;!--[if lt IE 8]&gt;
+            &lt;p class="chromeframe"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; or &lt;a href="http://www.google.com/chromeframe/?redirect=true"&gt;activate Google Chrome Frame&lt;/a&gt; to improve your experience.&lt;/p&gt;
+        &lt;![endif]--&gt;
+        &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;script&gt;window.jQuery || document.write('&lt;script src="assets/components/boilerx/js/vendor/jquery-1.9.1.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+        &lt;script src="assets/components/boilerx/js/plugins.js"&gt;&lt;/script&gt;
+        &lt;script src="assets/components/boilerx/js/main.js"&gt;&lt;/script&gt;
+        &lt;!-- Change UAXXXXXXXX1 to be your site's ID by setting bx.ga-id System Setting to auto-enable tracking --&gt;
+        &lt;!--script&gt;
+            var _gaq=[ ['_setAccount','UAXXXXXXXX1'],['_trackPageview'] ];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        &lt;/script--&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+					</pre>
+					<h2><a name="boilerX-SeeAlso"></a>See Also</h2>
+					<ol class="ug-toc">
+						<li><a href="extras/revo/boilerx/bx-head-open">bx-head-open</a></li>
+						<li><a href="extras/revo/boilerx/bx-head-append">bx-head-append</a></li>
+						<li><a href="extras/revo/boilerx/bx-head-close">bx-head-close</a></li>
+						<li><a href="extras/revo/boilerx/bx-container-open">bx-container-open</a></li>
+						<li><a href="extras/revo/boilerx/bx-container-close">bx-container-close</a></li>
+						<li><a href="extras/revo/boilerx/bx-bottom-open">bx-bottom-open</a></li>
+						<li><a href="extras/revo/boilerx/bx-bottom-close">bx-bottom-close</a></li>
+					</ol>
+				</main>
+			</div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="assets/js/main-dev.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
